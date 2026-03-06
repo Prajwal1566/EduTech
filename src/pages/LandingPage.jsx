@@ -69,8 +69,8 @@ export default function LandingPage() {
           </div>
           <div className="nav-links">
             <a href="#features" className="nav-link">Features</a>
-            <a href="#about" className="nav-link">About</a>
-            <a href="#contact" className="nav-link">Contact</a>
+            <a href="/about" className="nav-link">About</a>
+            <a href="/contact" className="nav-link">Contact</a>
             <Link to="/login" className="nav-btn nav-btn-login">Login</Link>
             <Link to="/signup" className="nav-btn nav-btn-signup">Sign Up</Link>
           </div>
@@ -96,7 +96,7 @@ export default function LandingPage() {
                 <span className="btn-arrow">→</span>
               </Link>
               <button className="btn btn-secondary">
-                Learn More
+                <a href="#features">Learn More</a>
               </button>
             </div>
           </div>
@@ -193,7 +193,7 @@ export default function LandingPage() {
           <div className="footer-section">
             <h4>Quick Links</h4>
             <a href="#features">Features</a>
-            <a href="#about">About</a>
+            <a href="/about">About</a>
             <Link to="/login">Login</Link>
           </div>
           <div className="footer-section">

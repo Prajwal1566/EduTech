@@ -21,6 +21,8 @@ import HelpCenter from "./pages/HelpCenter";
 import Terms from "./pages/Terms";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CategoryPage from "./pages/CategoryPage";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 import { Navigate } from "react-router-dom";
 
@@ -629,6 +631,8 @@ const removeFromWishlist = (id) => {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/category/:category" element={<CategoryPage/>} />
         <Route path="/home" element={<Home />}/>
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
 
         <Route path="/admin-panel" element={<ProtectedRoute><AdminPanel /></ProtectedRoute>} />
         
