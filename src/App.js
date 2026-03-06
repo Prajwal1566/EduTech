@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import AdminUsers from "./pages/AdminUsers";
 import CourseCard from "./components/CourseCard";
 import AdminAddCourse from "./pages/AdminAddCourse";

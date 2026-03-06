@@ -255,7 +255,7 @@ export default function PaymentSuccess() {
         .then(d => { if (d?.title) setCourseName(d.title); })
         .catch(() => {});
     }
-  }, []);
+  }, [location.state?.courseId, user]);
 
   /* Animated processing sequence */
   useEffect(() => {

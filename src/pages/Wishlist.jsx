@@ -20,7 +20,7 @@ export default function Wishlist() {
     fetch(`${BASE_URL}/api/courses`)
       .then(res => res.json())
       .then(data => setCourses(data));
-  }, []);
+  }, [navigate, user]);
 
   const handleLogout = () => { localStorage.removeItem("user"); navigate("/"); };
 

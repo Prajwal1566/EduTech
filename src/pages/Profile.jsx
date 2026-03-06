@@ -480,7 +480,7 @@ export default function Profile() {
         setInProgress(data.filter(c => c.completed === 0));
         setCompleted(data.filter(c => c.completed === 1));
       }).catch(e => console.error(e));
-  }, []);
+  }, [navigate, user]);
 
   const handleLogout = () => { localStorage.removeItem("user"); navigate("/"); };
 
